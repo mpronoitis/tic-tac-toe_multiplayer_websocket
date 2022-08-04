@@ -1,0 +1,123 @@
+#restart-game {
+    border: none;
+    background-color: inherit;
+    align-self: center;
+    cursor: pointer;
+    outline: none;
+    margin-block-start: 2rem;
+}
+#restart-game>svg {
+    width: 3rem;
+    height: 3rem;
+}
+#restart-game>svg {
+fill: rgba(0,0,0.4);
+transform: scale(1.3,1.3);
+}
+#message {
+    position: relative;
+}
+#send_message {
+    position: relative;
+}
+
+:root {
+    --main-color: #059fc2;
+    --inverse-main: #fa603d;
+    --light-grey: #f3f3f3;
+  
+    --border-value: 2px solid rgba(255, 255, 255, 0.5);
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+      Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+
+  
+  #main-content {
+    display: flex;
+    justify-content: center;
+    
+  }
+
+  article#video {
+    min-height: 80vh;
+  }
+  
+
+  #video-container {
+    display: grid;
+   
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+      '.'
+      '.'
+      'remote-video'
+      'video-control'
+      'local-video';
+  }
+  
+  .localVideo {
+    height: 15vh;
+    width: 100%;
+  
+    grid-area: local-video;
+    justify-self: center;
+  
+    background-color: rgb(20, 20, 20);
+    border-radius: 0.2rem;
+  }
+  
+  .remoteVideo {
+    height: 60vh;
+    width: 100%;
+  
+    grid-area: remote-video;
+  
+    background-color: rgb(20, 20, 20);
+    border-radius: 0.2rem;
+  }
+  
+  #video-control {
+    grid-area: video-control;
+    justify-self: center;
+  }
+  
+  .control-btn {
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .control-btn > svg {
+    color: #f9f9f9;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  
+  .control-btn:disabled {
+    background-color: #c5c5c5 !important;
+    cursor: default;
+  }
+  
+  .control-btn:disabled svg {
+    color: #979797 !important;
+  }
+  
+  #callButton {
+    background-color: green;
+  }
+  
+  #hangUpButton {
+    background-color: red;
+  }
+  
+  
+  
